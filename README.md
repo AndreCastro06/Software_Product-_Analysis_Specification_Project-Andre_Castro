@@ -88,24 +88,19 @@ Copiar código
 
 ## 📌 Funcionalidade Demonstrada em Vídeo
 
-1. Cadastro de nutricionista
+1. Cadastro de nutricionista e paciente
 2. Login com JWT
-3. Preenchimento da Anamnese
-4. Cálculo de GET com base em Harris-Benedict
-5. Exportação de PDF com nome, CRN e plano gerado
-6. Consumo da API via front-end (React)
+
 
 ---
 
 ## 📚 Próximas Sprints
 
-- Registro alimentar com foto e horário
-- Gráficos de evolução e relatórios
-- Prescrição de suplementos
-- Alertas automáticos
-- Notificações para o paciente
-- Chat com nutricionista
-- Geração de avatar 3D
+3. Preenchimento da Anamnese Completa
+4. Cálculo de GET com base em Harris-Benedict
+5. Exportação de PDF com nome, CRN e plano gerado
+6. Consumo da API via front-end (React)
+7.  Calculo de Composição Corporal.
 
 ---
 
