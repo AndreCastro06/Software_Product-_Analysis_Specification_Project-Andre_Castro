@@ -1,6 +1,0 @@
-@PeaceAPI_HostAddress = http://localhost:5225
-
-GET {{PeaceAPI_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
