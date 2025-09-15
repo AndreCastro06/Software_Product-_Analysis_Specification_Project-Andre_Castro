@@ -1,4 +1,5 @@
 # 🧠 PEACE - Plataforma de Engajamento e Acompanhamento Clínico e Evolutivo
+# 🧠 PEACE - Plataforma de Engajamento e Acompanhamento Clínico e Evolutivo
 
 ## 🎯 Visão Geral do Projeto
 
@@ -11,7 +12,7 @@ Nesta Sprint 1 (AC1), foi entregue a base funcional do sistema, com autenticaç�
 ## 🧑‍💻 Equipe
 
 - André Castro – RM: 123456
-- [Adicione outros integrantes do grupo, se houver]
+
 
 ---
 
@@ -82,8 +83,8 @@ Copiar código
 
 ## 🗂️ Quadro de Tarefas (Board)
 
-🔗 [Trello / GitHub Projects - Sprint 1](https://link-do-board.com)
-
+🔗 [[Trello / GitHub Projects - Sprint 1](https://link-do-board.com)
+](https://trello.com/invite/b/68c8022f655f6eb1cc327019/ATTId9056ee608122b3308eaf6907a83eb624C6D862E/projeto-peace-plataforma-de-acompanhamento-clinico-e-evolutivo-para-nutricionistas)
 ---
 
 ## 📌 Funcionalidade Demonstrada em Vídeo
@@ -106,4 +107,3 @@ Copiar código
 
 > **Data da entrega:** 14/09/2025  
 > **Disciplina:** Projeto de Software  
-> **Professor:** [Nome do Professor]
