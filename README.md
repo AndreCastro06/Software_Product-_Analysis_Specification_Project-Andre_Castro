@@ -105,5 +105,6 @@ Copiar código
 
 ---
 
-> **Data da entrega:** 14/09/2025  
+> **Prazo da entrega:** 14/09/2025
+> Entrega Realizada: 15/09/2025  
 > **Disciplina:** Projeto de Software  
