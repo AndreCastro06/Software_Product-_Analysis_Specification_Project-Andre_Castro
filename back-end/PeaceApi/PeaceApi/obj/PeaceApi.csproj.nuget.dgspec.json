@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andre\\Desktop\\Peace Project Impacta\\back-end\\PeaceApi\\PeaceApi\\PeaceApi.csproj": {}
+    "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\PeaceApi\\PeaceApi\\PeaceApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andre\\Desktop\\Peace Project Impacta\\back-end\\PeaceApi\\PeaceApi\\PeaceApi.csproj": {
+    "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\PeaceApi\\PeaceApi\\PeaceApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andre\\Desktop\\Peace Project Impacta\\back-end\\PeaceApi\\PeaceApi\\PeaceApi.csproj",
+        "projectUniqueName": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\PeaceApi\\PeaceApi\\PeaceApi.csproj",
         "projectName": "PeaceApi",
-        "projectPath": "C:\\Users\\Andre\\Desktop\\Peace Project Impacta\\back-end\\PeaceApi\\PeaceApi\\PeaceApi.csproj",
+        "projectPath": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\PeaceApi\\PeaceApi\\PeaceApi.csproj",
         "packagesPath": "C:\\Users\\Andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andre\\Desktop\\Peace Project Impacta\\back-end\\PeaceApi\\PeaceApi\\obj\\",
+        "outputPath": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\PeaceApi\\PeaceApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

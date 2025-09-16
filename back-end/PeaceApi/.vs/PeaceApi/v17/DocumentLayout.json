@@ -1,26 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Andre\\Desktop\\Peace Project Impacta\\back-end\\PeaceApi\\",
+  "WorkspaceRootPath": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\PeaceApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|c:\\users\\andre\\desktop\\peace project impacta\\back-end\\peaceapi\\peaceapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|solutionrelative:peaceapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|c:\\users\\andre\\desktop\\software_product-_analysis_specification_project-andre_castro\\back-end\\peaceapi\\peaceapi\\dtos\\registernutricionistadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|solutionrelative:peaceapi\\dtos\\registernutricionistadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|c:\\users\\andre\\desktop\\peace project impacta\\back-end\\peaceapi\\peaceapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|solutionrelative:peaceapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|c:\\users\\andre\\desktop\\software_product-_analysis_specification_project-andre_castro\\back-end\\peaceapi\\peaceapi\\services\\nutricionistaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|solutionrelative:peaceapi\\services\\nutricionistaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|c:\\users\\andre\\desktop\\peace project impacta\\back-end\\peaceapi\\peaceapi\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|solutionrelative:peaceapi\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|c:\\users\\andre\\desktop\\software_product-_analysis_specification_project-andre_castro\\back-end\\peaceapi\\peaceapi\\services\\iauthnutricionistaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|solutionrelative:peaceapi\\services\\iauthnutricionistaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|c:\\users\\andre\\desktop\\peace project impacta\\back-end\\peaceapi\\peaceapi\\data\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|solutionrelative:peaceapi\\data\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|c:\\users\\andre\\desktop\\software_product-_analysis_specification_project-andre_castro\\back-end\\peaceapi\\peaceapi\\controllers\\nutricionistaauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|solutionrelative:peaceapi\\controllers\\nutricionistaauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|c:\\users\\andre\\desktop\\peace project impacta\\back-end\\peaceapi\\peaceapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|c:\\users\\andre\\desktop\\software_product-_analysis_specification_project-andre_castro\\back-end\\peaceapi\\peaceapi\\services\\nutricionistaauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|solutionrelative:peaceapi\\services\\nutricionistaauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|c:\\users\\andre\\desktop\\software_product-_analysis_specification_project-andre_castro\\back-end\\peaceapi\\peaceapi\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|solutionrelative:peaceapi\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|c:\\users\\andre\\desktop\\software_product-_analysis_specification_project-andre_castro\\back-end\\peaceapi\\peaceapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|solutionrelative:peaceapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|c:\\users\\andre\\desktop\\software_product-_analysis_specification_project-andre_castro\\back-end\\peaceapi\\peaceapi\\models\\nutricionista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|solutionrelative:peaceapi\\models\\nutricionista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|c:\\users\\andre\\desktop\\software_product-_analysis_specification_project-andre_castro\\back-end\\peaceapi\\peaceapi\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{64F918CC-50B3-43A3-A8DD-504CCABA0473}|PeaceApi\\PeaceApi.csproj|solutionrelative:peaceapi\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,15 +46,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:4:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NutricionistaService.cs",
+              "DocumentMoniker": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\PeaceApi\\PeaceApi\\Services\\NutricionistaService.cs",
+              "RelativeDocumentMoniker": "PeaceApi\\Services\\NutricionistaService.cs",
+              "ToolTip": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\PeaceApi\\PeaceApi\\Services\\NutricionistaService.cs",
+              "RelativeToolTip": "PeaceApi\\Services\\NutricionistaService.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAcwEoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T02:10:39.508Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IAuthNutricionistaService.cs",
+              "DocumentMoniker": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\PeaceApi\\PeaceApi\\Services\\IAuthNutricionistaService.cs",
+              "RelativeDocumentMoniker": "PeaceApi\\Services\\IAuthNutricionistaService.cs",
+              "ToolTip": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\PeaceApi\\PeaceApi\\Services\\IAuthNutricionistaService.cs",
+              "RelativeToolTip": "PeaceApi\\Services\\IAuthNutricionistaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T02:09:43.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\PeaceApi\\PeaceApi\\DTOs\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "PeaceApi\\DTOs\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\PeaceApi\\PeaceApi\\DTOs\\LoginDTO.cs",
+              "RelativeToolTip": "PeaceApi\\DTOs\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T02:04:48.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegisterNutricionistaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\PeaceApi\\PeaceApi\\DTOs\\RegisterNutricionistaDTO.cs",
+              "RelativeDocumentMoniker": "PeaceApi\\DTOs\\RegisterNutricionistaDTO.cs",
+              "ToolTip": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\PeaceApi\\PeaceApi\\DTOs\\RegisterNutricionistaDTO.cs",
+              "RelativeToolTip": "PeaceApi\\DTOs\\RegisterNutricionistaDTO.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAASwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T02:00:16.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NutricionistaAuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\PeaceApi\\PeaceApi\\Controllers\\NutricionistaAuthController.cs",
+              "RelativeDocumentMoniker": "PeaceApi\\Controllers\\NutricionistaAuthController.cs",
+              "ToolTip": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\PeaceApi\\PeaceApi\\Controllers\\NutricionistaAuthController.cs",
+              "RelativeToolTip": "PeaceApi\\Controllers\\NutricionistaAuthController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T01:14:57.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NutricionistaAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\PeaceApi\\PeaceApi\\Services\\NutricionistaAuthService.cs",
+              "RelativeDocumentMoniker": "PeaceApi\\Services\\NutricionistaAuthService.cs",
+              "ToolTip": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\PeaceApi\\PeaceApi\\Services\\NutricionistaAuthService.cs",
+              "RelativeToolTip": "PeaceApi\\Services\\NutricionistaAuthService.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAjwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T01:14:27.543Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -46,65 +132,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AppDbContextFactory.cs",
-              "DocumentMoniker": "C:\\Users\\Andre\\Desktop\\Peace Project Impacta\\back-end\\PeaceApi\\PeaceApi\\Data\\AppDbContextFactory.cs",
-              "RelativeDocumentMoniker": "PeaceApi\\Data\\AppDbContextFactory.cs",
-              "ToolTip": "C:\\Users\\Andre\\Desktop\\Peace Project Impacta\\back-end\\PeaceApi\\PeaceApi\\Data\\AppDbContextFactory.cs",
-              "RelativeToolTip": "PeaceApi\\Data\\AppDbContextFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Nutricionista.cs",
+              "DocumentMoniker": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\PeaceApi\\PeaceApi\\Models\\Nutricionista.cs",
+              "RelativeDocumentMoniker": "PeaceApi\\Models\\Nutricionista.cs",
+              "ToolTip": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\PeaceApi\\PeaceApi\\Models\\Nutricionista.cs",
+              "RelativeToolTip": "PeaceApi\\Models\\Nutricionista.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T11:53:22.465Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T12:45:07.858Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "docker-compose.yml",
-              "DocumentMoniker": "C:\\Users\\Andre\\Desktop\\Peace Project Impacta\\back-end\\PeaceApi\\PeaceApi\\docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\PeaceApi\\PeaceApi\\docker-compose.yml",
               "RelativeDocumentMoniker": "PeaceApi\\docker-compose.yml",
-              "ToolTip": "C:\\Users\\Andre\\Desktop\\Peace Project Impacta\\back-end\\PeaceApi\\PeaceApi\\docker-compose.yml",
+              "ToolTip": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\PeaceApi\\PeaceApi\\docker-compose.yml",
               "RelativeToolTip": "PeaceApi\\docker-compose.yml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-09-15T10:52:07.28Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T10:52:07.28Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Andre\\Desktop\\Peace Project Impacta\\back-end\\PeaceApi\\PeaceApi\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "PeaceApi\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Andre\\Desktop\\Peace Project Impacta\\back-end\\PeaceApi\\PeaceApi\\Properties\\launchSettings.json",
-              "RelativeToolTip": "PeaceApi\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAgwBoAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-15T09:12:07.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Andre\\Desktop\\Peace Project Impacta\\back-end\\PeaceApi\\PeaceApi\\appsettings.json",
-              "RelativeDocumentMoniker": "PeaceApi\\appsettings.json",
-              "ToolTip": "C:\\Users\\Andre\\Desktop\\Peace Project Impacta\\back-end\\PeaceApi\\PeaceApi\\appsettings.json",
-              "RelativeToolTip": "PeaceApi\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-15T09:11:57.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Andre\\Desktop\\Peace Project Impacta\\back-end\\PeaceApi\\PeaceApi\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\PeaceApi\\PeaceApi\\Program.cs",
               "RelativeDocumentMoniker": "PeaceApi\\Program.cs",
-              "ToolTip": "C:\\Users\\Andre\\Desktop\\Peace Project Impacta\\back-end\\PeaceApi\\PeaceApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\PeaceApi\\PeaceApi\\Program.cs",
               "RelativeToolTip": "PeaceApi\\Program.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAACwAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-15T09:09:20.372Z",
               "EditorCaption": ""
@@ -118,6 +176,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Bookmark",

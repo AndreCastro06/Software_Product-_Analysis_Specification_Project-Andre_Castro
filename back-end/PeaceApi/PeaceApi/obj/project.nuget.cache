@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1x4CiDkrW50=",
+  "dgSpecHash": "pkcIHh0DBdU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Andre\\Desktop\\Peace Project Impacta\\back-end\\PeaceApi\\PeaceApi\\PeaceApi.csproj",
+  "projectFilePath": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\PeaceApi\\PeaceApi\\PeaceApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Andre\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Andre\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.5\\microsoft.aspnetcore.authentication.jwtbearer.8.0.5.nupkg.sha512",
