@@ -1,5 +1,4 @@
 # 🧠 PEACE - Plataforma de Engajamento e Acompanhamento Clínico e Evolutivo
-# 🧠 PEACE - Plataforma de Engajamento e Acompanhamento Clínico e Evolutivo
 
 ## 🎯 Visão Geral do Projeto
 
@@ -78,6 +77,8 @@ Copiar código
 ## 📽️ Vídeo da Sprint
 
 🔗 [Clique aqui para assistir à apresentação da AC1](https://link-do-video.com)
+
+🔗 [Clique aqui para assistir à apresentação da AC2](https://www.loom.com/share/6dd69412ce094a57ac467164a2093c0b)
 
 ---
 
