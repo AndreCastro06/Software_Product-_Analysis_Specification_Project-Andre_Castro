@@ -1,0 +1,5 @@
+@PeaceApiClean_HostAddress = https://localhost:5097
+
+GET {{PeaceApiClean_HostAddress}}/weatherforecast/
+Accept: application/json
+

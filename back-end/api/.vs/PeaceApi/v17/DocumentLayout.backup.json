@@ -1,0 +1,195 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA49404-EF12-BC78-67C5-083FD23E1E7E}|PeaceApi.csproj|c:\\users\\andre\\desktop\\software_product-_analysis_specification_project-andre_castro\\back-end\\api\\controllers\\anamnesecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA49404-EF12-BC78-67C5-083FD23E1E7E}|PeaceApi.csproj|solutionrelative:controllers\\anamnesecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA49404-EF12-BC78-67C5-083FD23E1E7E}|PeaceApi.csproj|c:\\users\\andre\\desktop\\software_product-_analysis_specification_project-andre_castro\\back-end\\api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA49404-EF12-BC78-67C5-083FD23E1E7E}|PeaceApi.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA49404-EF12-BC78-67C5-083FD23E1E7E}|PeaceApi.csproj|c:\\users\\andre\\desktop\\software_product-_analysis_specification_project-andre_castro\\back-end\\api\\controllers\\dropdownsuplementacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA49404-EF12-BC78-67C5-083FD23E1E7E}|PeaceApi.csproj|solutionrelative:controllers\\dropdownsuplementacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA49404-EF12-BC78-67C5-083FD23E1E7E}|PeaceApi.csproj|c:\\users\\andre\\desktop\\software_product-_analysis_specification_project-andre_castro\\back-end\\api\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA49404-EF12-BC78-67C5-083FD23E1E7E}|PeaceApi.csproj|solutionrelative:dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA49404-EF12-BC78-67C5-083FD23E1E7E}|PeaceApi.csproj|c:\\users\\andre\\desktop\\software_product-_analysis_specification_project-andre_castro\\back-end\\api\\models\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA49404-EF12-BC78-67C5-083FD23E1E7E}|PeaceApi.csproj|solutionrelative:models\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA49404-EF12-BC78-67C5-083FD23E1E7E}|PeaceApi.csproj|c:\\users\\andre\\desktop\\software_product-_analysis_specification_project-andre_castro\\back-end\\api\\controllers\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA49404-EF12-BC78-67C5-083FD23E1E7E}|PeaceApi.csproj|solutionrelative:controllers\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA49404-EF12-BC78-67C5-083FD23E1E7E}|PeaceApi.csproj|c:\\users\\andre\\desktop\\software_product-_analysis_specification_project-andre_castro\\back-end\\api\\services\\anamneseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA49404-EF12-BC78-67C5-083FD23E1E7E}|PeaceApi.csproj|solutionrelative:services\\anamneseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA49404-EF12-BC78-67C5-083FD23E1E7E}|PeaceApi.csproj|c:\\users\\andre\\desktop\\software_product-_analysis_specification_project-andre_castro\\back-end\\api\\dtos\\anamneseresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA49404-EF12-BC78-67C5-083FD23E1E7E}|PeaceApi.csproj|solutionrelative:dtos\\anamneseresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA49404-EF12-BC78-67C5-083FD23E1E7E}|PeaceApi.csproj|c:\\users\\andre\\desktop\\software_product-_analysis_specification_project-andre_castro\\back-end\\api\\dtos\\anamneserequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA49404-EF12-BC78-67C5-083FD23E1E7E}|PeaceApi.csproj|solutionrelative:dtos\\anamneserequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 76,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AnamneseController.cs",
+              "DocumentMoniker": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\api\\Controllers\\AnamneseController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AnamneseController.cs",
+              "ToolTip": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\api\\Controllers\\AnamneseController.cs",
+              "RelativeToolTip": "Controllers\\AnamneseController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAawD4AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T03:16:11.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\api\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\api\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAEwEIAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T03:15:52.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DropDownSuplementacaoController.cs",
+              "DocumentMoniker": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\api\\Controllers\\DropDownSuplementacaoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DropDownSuplementacaoController.cs",
+              "ToolTip": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\api\\Controllers\\DropDownSuplementacaoController.cs",
+              "RelativeToolTip": "Controllers\\DropDownSuplementacaoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T03:15:22.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\api\\DTOs\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\api\\DTOs\\LoginDTO.cs",
+              "RelativeToolTip": "DTOs\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T03:11:23.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PacienteController.cs",
+              "DocumentMoniker": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\api\\Controllers\\PacienteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PacienteController.cs",
+              "ToolTip": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\api\\Controllers\\PacienteController.cs",
+              "RelativeToolTip": "Controllers\\PacienteController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowDYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T03:10:21.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Paciente.cs",
+              "DocumentMoniker": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\api\\Models\\Paciente.cs",
+              "RelativeDocumentMoniker": "Models\\Paciente.cs",
+              "ToolTip": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\api\\Models\\Paciente.cs",
+              "RelativeToolTip": "Models\\Paciente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T02:26:25.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AnamneseResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\api\\DTOs\\AnamneseResponseDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\AnamneseResponseDTO.cs",
+              "ToolTip": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\api\\DTOs\\AnamneseResponseDTO.cs",
+              "RelativeToolTip": "DTOs\\AnamneseResponseDTO.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAywDMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T02:18:41.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AnamneseRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\api\\DTOs\\AnamneseRequestDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\AnamneseRequestDTO.cs",
+              "ToolTip": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\api\\DTOs\\AnamneseRequestDTO.cs",
+              "RelativeToolTip": "DTOs\\AnamneseRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T02:18:10.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AnamneseService.cs",
+              "DocumentMoniker": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\api\\Services\\AnamneseService.cs",
+              "RelativeDocumentMoniker": "Services\\AnamneseService.cs",
+              "ToolTip": "C:\\Users\\Andre\\Desktop\\Software_Product-_Analysis_Specification_Project-Andre_Castro\\back-end\\api\\Services\\AnamneseService.cs",
+              "RelativeToolTip": "Services\\AnamneseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAewBUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T02:16:32.813Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

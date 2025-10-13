@@ -1,11 +1,14 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import { login } from "../services/authService";
+import { useNavigate } from "react-router-dom";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [erro, setErro] = useState("");
+  const navigate = useNavigate();
+
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -24,7 +27,7 @@ export default function LoginPage() {
 
       if (role === "Nutricionista") {
         console.log("Login como Nutricionista");
-        // não redireciona
+        navigate("/painel-nutricionista");
       } else if (role === "Paciente") {
         console.log("Login como Paciente");
         // não redireciona
@@ -35,22 +38,8 @@ export default function LoginPage() {
       console.error("Erro no login:", error);
        setErro("Usuário ou senha inválidos.");
        }
-
-      }
-    //   // Redirecionamento baseado na role:
-    //   if (role === "Nutricionista") {
-    //     window.location.href = "/LoginPage";
-    //   } else if (role === "Paciente") {
-    //     window.location.href = "/LoginPage";
-    //   } else {
-    //     console.warn("Tipo de usuário não reconhecido:", role);
-    //   }
-    // } catch (error: any) {
-    //   console.error("Erro no login:", error);
-    //   setErro("Usuário ou senha inválidos.");
-    // }
-  //};
-
+    }
+   
 
   return (
     <div className="login-container">
@@ -85,5 +74,6 @@ export default function LoginPage() {
         </a>
       </div>
     </div>
+    
   );
 }

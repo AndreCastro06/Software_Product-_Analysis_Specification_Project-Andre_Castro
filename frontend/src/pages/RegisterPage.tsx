@@ -13,7 +13,6 @@ export default function RegisterPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
     if (senha !== confirmarSenha) {
       alert("As senhas não coincidem!");
       return;
@@ -85,8 +84,6 @@ export default function RegisterPage() {
           onChange={(e) => setConfirmarSenha(e.target.value)}
           className="register-input"
         />
-          
-
         <select
           value={tipoConta}
           onChange={(e) => setTipoConta(e.target.value as "Nutricionista" | "Paciente")}

@@ -1,0 +1,3407 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "PeaceApi",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Alimento": {
+      "get": {
+        "tags": [
+          "Alimento"
+        ],
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 20
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AlimentoReadDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AlimentoReadDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AlimentoReadDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Alimento"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Alimento"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Alimento"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Alimento"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Alimento"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Alimento"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Alimento"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Alimento/{id}": {
+      "get": {
+        "tags": [
+          "Alimento"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AlimentoReadDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AlimentoReadDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AlimentoReadDTO"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Alimento"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Alimento"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Alimento"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Alimento"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Alimento"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Anamnese": {
+      "post": {
+        "tags": [
+          "Anamnese"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AnamneseRequestDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AnamneseRequestDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AnamneseRequestDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AnamneseResponseDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AnamneseResponseDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AnamneseResponseDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Anamnese/{id}": {
+      "get": {
+        "tags": [
+          "Anamnese"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AnamneseResponseDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AnamneseResponseDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AnamneseResponseDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Anamnese/paciente/{pacienteId}": {
+      "get": {
+        "tags": [
+          "Anamnese"
+        ],
+        "parameters": [
+          {
+            "name": "pacienteId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AnamneseResponseDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AnamneseResponseDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AnamneseResponseDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Anotacao/{id}/anotacao": {
+      "patch": {
+        "tags": [
+          "Anotacao"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarAnotacaoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarAnotacaoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarAnotacaoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Anotacao/{id}/historico-anotacoes": {
+      "get": {
+        "tags": [
+          "Anotacao"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AnotacaoHistoricoDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AnotacaoHistoricoDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AnotacaoHistoricoDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Auth/login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AvaliacaoAntropometrica": {
+      "post": {
+        "tags": [
+          "AvaliacaoAntropometrica"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AvaliacaoAntropometricaDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AvaliacaoAntropometricaDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AvaliacaoAntropometricaDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AvaliacaoAntropometrica"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AvaliacaoAntropometrica"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AvaliacaoAntropometrica"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/AvaliacaoAntropometrica/paciente/{pacienteId}": {
+      "get": {
+        "tags": [
+          "AvaliacaoAntropometrica"
+        ],
+        "parameters": [
+          {
+            "name": "pacienteId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AvaliacaoAntropometrica"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AvaliacaoAntropometrica"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AvaliacaoAntropometrica"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/AvaliacaoAntropometrica/simular": {
+      "post": {
+        "tags": [
+          "AvaliacaoAntropometrica"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AvaliacaoAntropometricaDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AvaliacaoAntropometricaDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AvaliacaoAntropometricaDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResultadoAvaliacaoDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResultadoAvaliacaoDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResultadoAvaliacaoDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/DropdownSuplementacao/pacientes": {
+      "get": {
+        "tags": [
+          "DropdownSuplementacao"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PacienteDadosSuplementacaoDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PacienteDadosSuplementacaoDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PacienteDadosSuplementacaoDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/DropdownSuplementacao/planos-alimentares": {
+      "get": {
+        "tags": [
+          "DropdownSuplementacao"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PlanoResumoDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PlanoResumoDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PlanoResumoDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ItemConsumido/{refeicaoId}": {
+      "get": {
+        "tags": [
+          "ItemConsumido"
+        ],
+        "parameters": [
+          {
+            "name": "refeicaoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ItemConsumido"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ItemConsumido"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ItemConsumido"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ItemConsumido": {
+      "post": {
+        "tags": [
+          "ItemConsumido"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemConsumido"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemConsumido"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemConsumido"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ItemConsumido"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ItemConsumido"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ItemConsumido"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ItemConsumido/{id}": {
+      "delete": {
+        "tags": [
+          "ItemConsumido"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/NutricionistaAuth/register": {
+      "post": {
+        "tags": [
+          "NutricionistaAuth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterNutricionistaDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterNutricionistaDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterNutricionistaDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/NutricionistaAuth/login": {
+      "post": {
+        "tags": [
+          "NutricionistaAuth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/pacientes": {
+      "post": {
+        "tags": [
+          "Paciente"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Paciente"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Paciente"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Paciente"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Paciente"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/pacientes/{id}": {
+      "get": {
+        "tags": [
+          "Paciente"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/PlanoAlimentar": {
+      "post": {
+        "tags": [
+          "PlanoAlimentar"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CriarPlanoAlimentarDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CriarPlanoAlimentarDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CriarPlanoAlimentarDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/PlanoAlimentar/{planoId}": {
+      "get": {
+        "tags": [
+          "PlanoAlimentar"
+        ],
+        "parameters": [
+          {
+            "name": "planoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlanoAlimentarDetalhadoDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlanoAlimentarDetalhadoDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlanoAlimentarDetalhadoDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/PlanoAlimentar/{planoId}/exportar": {
+      "get": {
+        "tags": [
+          "PlanoAlimentar"
+        ],
+        "parameters": [
+          {
+            "name": "planoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/PregasCutaneas/avaliacao/{avaliacaoId}": {
+      "get": {
+        "tags": [
+          "PregasCutaneas"
+        ],
+        "parameters": [
+          {
+            "name": "avaliacaoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PregasCutaneas"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PregasCutaneas"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PregasCutaneas"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/PregasCutaneas": {
+      "post": {
+        "tags": [
+          "PregasCutaneas"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PregasCutaneas"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PregasCutaneas"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PregasCutaneas"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PregasCutaneas"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PregasCutaneas"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PregasCutaneas"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/PregasCutaneas/{id}": {
+      "put": {
+        "tags": [
+          "PregasCutaneas"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PregasCutaneas"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PregasCutaneas"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PregasCutaneas"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/nutricionista/register": {
+      "post": {
+        "tags": [
+          "PublicNutricionista"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterNutricionistaDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterNutricionistaDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterNutricionistaDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Nutricionista"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Nutricionista"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Nutricionista"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/public/nutricionista/login": {
+      "post": {
+        "tags": [
+          "PublicNutricionista"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Refeicao": {
+      "get": {
+        "tags": [
+          "Refeicao"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Refeicao"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Refeicao"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Refeicao"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Refeicao"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Refeicao"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Refeicao"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Refeicao"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Refeicao"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Refeicao"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Refeicao"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Refeicao/{id}": {
+      "get": {
+        "tags": [
+          "Refeicao"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Refeicao"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Refeicao"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Refeicao"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Refeicao"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Refeicao"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Refeicao"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Refeicao"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Refeicao"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Refeicao/{id}/anotacao": {
+      "patch": {
+        "tags": [
+          "Refeicao"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Suplemento": {
+      "post": {
+        "tags": [
+          "Suplemento"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuplementoRequestDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuplementoRequestDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuplementoRequestDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuplementoResponseDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuplementoResponseDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuplementoResponseDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Suplemento/paciente/{pacienteId}": {
+      "get": {
+        "tags": [
+          "Suplemento"
+        ],
+        "parameters": [
+          {
+            "name": "pacienteId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuplementoResponseDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuplementoResponseDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuplementoResponseDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Suplemento/{id}": {
+      "patch": {
+        "tags": [
+          "Suplemento"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuplementoRequestDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuplementoRequestDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuplementoRequestDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Suplemento"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TabelaTaco/detalhado": {
+      "get": {
+        "tags": [
+          "TabelaTaco"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TabelaTaco"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TabelaTaco"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TabelaTaco"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TabelaTaco/basico": {
+      "get": {
+        "tags": [
+          "TabelaTaco"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TabelaTacoSimplificadoDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TabelaTacoSimplificadoDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TabelaTacoSimplificadoDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AcidosGraxosTaco": {
+        "type": "object",
+        "properties": {
+          "numeroAlimento": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tabelaTaco": {
+            "$ref": "#/components/schemas/TabelaTaco"
+          },
+          "saturados": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "monoinsaturados": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "poliinsaturados": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "dozeZero": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "quatorzeZero": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "dezesseisZero": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "dezoitoZero": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "vinteZero": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "vinteDoisZero": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "vinteQuatroZero": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "quatorzeUm": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "dezesseisUm": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "dezoitoUm": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "vinteUm": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "dezoitoDoisN6": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "dezoitoTresN3": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "vinteQuatroCinco": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "vinteCincoCinco": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "vinteDoisCinco": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "vinteDoisSeis": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "dezoitoUmT": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "dezoitoDoisT": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Alimento": {
+        "required": [
+          "descricao",
+          "fonte"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descricao": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "fonte": {
+            "$ref": "#/components/schemas/FonteDeDados"
+          },
+          "quantidadeReferencia": {
+            "type": "number",
+            "format": "double"
+          },
+          "unidadeMedida": {
+            "type": "string",
+            "nullable": true
+          },
+          "energia": {
+            "type": "number",
+            "format": "double"
+          },
+          "carboidrato": {
+            "type": "number",
+            "format": "double"
+          },
+          "proteina": {
+            "type": "number",
+            "format": "double"
+          },
+          "lipidio": {
+            "type": "number",
+            "format": "double"
+          },
+          "nutrientes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Nutriente"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AlimentoReadDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "energia": {
+            "type": "number",
+            "format": "double"
+          },
+          "carboidrato": {
+            "type": "number",
+            "format": "double"
+          },
+          "proteina": {
+            "type": "number",
+            "format": "double"
+          },
+          "lipidio": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AminoacidosTaco": {
+        "type": "object",
+        "properties": {
+          "numeroAlimento": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tabelaTaco": {
+            "$ref": "#/components/schemas/TabelaTaco"
+          },
+          "triptofano": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "treonina": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "isoleucina": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "leucina": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "lisina": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "metionina": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "cistina": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "fenilalanina": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "tirosina": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "valina": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "arginina": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "histidina": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "alanina": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "aspartico": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "glutamico": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "glicina": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prolina": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "serina": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AnamneseRequestDTO": {
+        "required": [
+          "dataNascimento",
+          "nomeCompleto",
+          "sexo"
+        ],
+        "type": "object",
+        "properties": {
+          "pacienteId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "nomeCompleto": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "dataNascimento": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "ocupacao": {
+            "type": "string",
+            "nullable": true
+          },
+          "praticaAtividadeFisica": {
+            "type": "boolean"
+          },
+          "atividadeFisicaTipo": {
+            "type": "string",
+            "nullable": true
+          },
+          "atividadeFisicaHorario": {
+            "type": "string",
+            "nullable": true
+          },
+          "atividadeFisicaFrequencia": {
+            "type": "string",
+            "nullable": true
+          },
+          "historicoFamiliar_HAS": {
+            "type": "boolean"
+          },
+          "historicoFamiliar_DM": {
+            "type": "boolean"
+          },
+          "historicoFamiliar_Hipercolesterolemia": {
+            "type": "boolean"
+          },
+          "historicoFamiliar_DoencaCardiaca": {
+            "type": "boolean"
+          },
+          "historicoPessoal_HAS": {
+            "type": "boolean"
+          },
+          "historicoPessoal_DM": {
+            "type": "boolean"
+          },
+          "historicoPessoal_Hipercolesterolemia": {
+            "type": "boolean"
+          },
+          "historicoPessoal_DoencaCardiaca": {
+            "type": "boolean"
+          },
+          "usaMedicamento": {
+            "type": "boolean"
+          },
+          "medicamentos": {
+            "type": "string",
+            "nullable": true
+          },
+          "usaSuplemento": {
+            "type": "boolean"
+          },
+          "suplementos": {
+            "type": "string",
+            "nullable": true
+          },
+          "temAlergiaAlimentar": {
+            "type": "boolean"
+          },
+          "alergias": {
+            "type": "string",
+            "nullable": true
+          },
+          "intoleranciaLactose": {
+            "type": "boolean"
+          },
+          "aversoesAlimentares": {
+            "type": "string",
+            "nullable": true
+          },
+          "consumoAguaDiario": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "frequenciaIntestinal": {
+            "$ref": "#/components/schemas/FrequenciaIntestinal"
+          },
+          "sexo": {
+            "$ref": "#/components/schemas/Sexo"
+          },
+          "peso": {
+            "maximum": 400,
+            "minimum": 10,
+            "type": "number",
+            "format": "double"
+          },
+          "altura": {
+            "maximum": 250,
+            "minimum": 50,
+            "type": "number",
+            "format": "double"
+          },
+          "fatorAtividade": {
+            "$ref": "#/components/schemas/FatorAtividade"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AnamneseResponseDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pacienteId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nomeCompleto": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataNascimento": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "idade": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ocupacao": {
+            "type": "string",
+            "nullable": true
+          },
+          "praticaAtividadeFisica": {
+            "type": "boolean"
+          },
+          "atividadeFisicaTipo": {
+            "type": "string",
+            "nullable": true
+          },
+          "atividadeFisicaHorario": {
+            "type": "string",
+            "nullable": true
+          },
+          "atividadeFisicaFrequencia": {
+            "type": "string",
+            "nullable": true
+          },
+          "historicoFamiliar_HAS": {
+            "type": "boolean"
+          },
+          "historicoFamiliar_DM": {
+            "type": "boolean"
+          },
+          "historicoFamiliar_Hipercolesterolemia": {
+            "type": "boolean"
+          },
+          "historicoFamiliar_DoencaCardiaca": {
+            "type": "boolean"
+          },
+          "historicoPessoal_HAS": {
+            "type": "boolean"
+          },
+          "historicoPessoal_DM": {
+            "type": "boolean"
+          },
+          "historicoPessoal_Hipercolesterolemia": {
+            "type": "boolean"
+          },
+          "historicoPessoal_DoencaCardiaca": {
+            "type": "boolean"
+          },
+          "usaMedicamento": {
+            "type": "boolean"
+          },
+          "medicamentos": {
+            "type": "string",
+            "nullable": true
+          },
+          "usaSuplemento": {
+            "type": "boolean"
+          },
+          "suplementos": {
+            "type": "string",
+            "nullable": true
+          },
+          "temAlergiaAlimentar": {
+            "type": "boolean"
+          },
+          "alergias": {
+            "type": "string",
+            "nullable": true
+          },
+          "intoleranciaLactose": {
+            "type": "boolean"
+          },
+          "aversoesAlimentares": {
+            "type": "string",
+            "nullable": true
+          },
+          "consumoAguaDiario": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "frequenciaIntestinal": {
+            "$ref": "#/components/schemas/FrequenciaIntestinal"
+          },
+          "sexo": {
+            "$ref": "#/components/schemas/Sexo"
+          },
+          "peso": {
+            "type": "number",
+            "format": "double"
+          },
+          "altura": {
+            "type": "number",
+            "format": "double"
+          },
+          "fatorAtividade": {
+            "$ref": "#/components/schemas/FatorAtividade"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AnotacaoHistoricoDTO": {
+        "type": "object",
+        "properties": {
+          "texto": {
+            "type": "string",
+            "nullable": true
+          },
+          "editadoEm": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AnotacaoRefeicaoHistorico": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "refeicaoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "textoAnterior": {
+            "type": "string",
+            "nullable": true
+          },
+          "editadoEm": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "refeicao": {
+            "$ref": "#/components/schemas/Refeicao"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AtualizarAnotacaoDTO": {
+        "type": "object",
+        "properties": {
+          "anotacao": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AvaliacaoAntropometrica": {
+        "required": [
+          "pacienteId"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pacienteId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "paciente": {
+            "$ref": "#/components/schemas/Paciente"
+          },
+          "sexo": {
+            "$ref": "#/components/schemas/Sexo"
+          },
+          "idade": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "peso": {
+            "type": "number",
+            "format": "double"
+          },
+          "pesoEmLibras": {
+            "type": "boolean"
+          },
+          "altura": {
+            "type": "number",
+            "format": "double"
+          },
+          "imc": {
+            "type": "number",
+            "format": "double"
+          },
+          "circunferenciaCintura": {
+            "type": "number",
+            "format": "double"
+          },
+          "circunferenciaQuadril": {
+            "type": "number",
+            "format": "double"
+          },
+          "geb": {
+            "type": "number",
+            "format": "double"
+          },
+          "get": {
+            "type": "number",
+            "format": "double"
+          },
+          "fatorAtividade": {
+            "$ref": "#/components/schemas/FatorAtividade"
+          },
+          "metodo": {
+            "$ref": "#/components/schemas/MetodoAvaliacao"
+          },
+          "percentualGordura": {
+            "type": "number",
+            "format": "double"
+          },
+          "massaGorda": {
+            "type": "number",
+            "format": "double"
+          },
+          "massaMagra": {
+            "type": "number",
+            "format": "double"
+          },
+          "tmb": {
+            "type": "number",
+            "format": "double"
+          },
+          "pregasCutaneas": {
+            "$ref": "#/components/schemas/PregasCutaneas"
+          },
+          "dataAvaliacao": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AvaliacaoAntropometricaDTO": {
+        "type": "object",
+        "properties": {
+          "pacienteId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sexo": {
+            "type": "string",
+            "nullable": true
+          },
+          "idade": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "peso": {
+            "type": "number",
+            "format": "double"
+          },
+          "pesoEmLibras": {
+            "type": "boolean"
+          },
+          "altura": {
+            "type": "number",
+            "format": "double"
+          },
+          "circunferenciaCintura": {
+            "type": "number",
+            "format": "double"
+          },
+          "circunferenciaQuadril": {
+            "type": "number",
+            "format": "double"
+          },
+          "geb": {
+            "type": "number",
+            "format": "double"
+          },
+          "get": {
+            "type": "number",
+            "format": "double"
+          },
+          "fatorAtividade": {
+            "$ref": "#/components/schemas/FatorAtividade"
+          },
+          "metodo": {
+            "$ref": "#/components/schemas/MetodoAvaliacao"
+          },
+          "percentualGordura": {
+            "type": "number",
+            "format": "double"
+          },
+          "massaGorda": {
+            "type": "number",
+            "format": "double"
+          },
+          "massaMagra": {
+            "type": "number",
+            "format": "double"
+          },
+          "tmb": {
+            "type": "number",
+            "format": "double"
+          },
+          "pcb": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "pcp": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "pct": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "pcsa": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "pcse": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "pcsi": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "pcab": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "pccx": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CriarPlanoAlimentarDTO": {
+        "type": "object",
+        "properties": {
+          "pacienteId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "objetivo": {
+            "type": "string",
+            "nullable": true
+          },
+          "refeicoes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RefeicaoPlanoDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FatorAtividade": {
+        "enum": [
+          120,
+          137,
+          155,
+          172,
+          190
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "FonteDeDados": {
+        "enum": [
+          0,
+          1,
+          2
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "FrequenciaIntestinal": {
+        "enum": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "ItemConsumido": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "quantidadeGramas": {
+            "type": "number",
+            "format": "double"
+          },
+          "refeicaoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "refeicao": {
+            "$ref": "#/components/schemas/Refeicao"
+          },
+          "alimentoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "alimento": {
+            "$ref": "#/components/schemas/Alimento"
+          },
+          "quantidade": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ItemPlanoAlimentarDTO": {
+        "type": "object",
+        "properties": {
+          "alimentoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "quantidadeGramas": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ItemPlanoDetalhadoDTO": {
+        "type": "object",
+        "properties": {
+          "alimentoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "quantidadeGramas": {
+            "type": "number",
+            "format": "double"
+          },
+          "nomeAlimento": {
+            "type": "string",
+            "nullable": true
+          },
+          "macros": {
+            "$ref": "#/components/schemas/ResumoMacrosDTO"
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginDTO": {
+        "required": [
+          "email",
+          "password"
+        ],
+        "type": "object",
+        "properties": {
+          "email": {
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "password": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MetodoAvaliacao": {
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "Nutricionista": {
+        "required": [
+          "crn",
+          "email",
+          "nomeCompleto"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nomeCompleto": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "crn": {
+            "type": "string",
+            "nullable": true
+          },
+          "passwordHash": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          },
+          "passwordSalt": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          },
+          "pacientes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Paciente"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Nutriente": {
+        "required": [
+          "nome",
+          "unidade"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nome": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "unidade": {
+            "minLength": 1,
+            "pattern": "^[a-zA-Zµ]+$",
+            "type": "string"
+          },
+          "valor": {
+            "minimum": 0,
+            "type": "number",
+            "format": "double"
+          },
+          "tipo": {
+            "$ref": "#/components/schemas/TipoNutriente"
+          },
+          "subtipo": {
+            "$ref": "#/components/schemas/SubtipoMicronutriente"
+          },
+          "alimentoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "alimento": {
+            "$ref": "#/components/schemas/Alimento"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Paciente": {
+        "required": [
+          "nomeCompleto"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nutricionistaId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "nutricionista": {
+            "$ref": "#/components/schemas/Nutricionista"
+          },
+          "nomeCompleto": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataNascimento": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "passwordHash": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          },
+          "passwordSalt": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          },
+          "refeicoes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Refeicao"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PacienteDadosSuplementacaoDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nomeCompleto": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataNascimento": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "idade": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PlanoAlimentarDetalhadoDTO": {
+        "type": "object",
+        "properties": {
+          "nomePaciente": {
+            "type": "string",
+            "nullable": true
+          },
+          "nomeNutricionista": {
+            "type": "string",
+            "nullable": true
+          },
+          "emailNutricionista": {
+            "type": "string",
+            "nullable": true
+          },
+          "crn": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataCriacao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "refeicoes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RefeicaoPlanoDetalhadoDTO"
+            },
+            "nullable": true
+          },
+          "totaisDoDia": {
+            "$ref": "#/components/schemas/ResumoMacrosDTO"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PlanoResumoDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nomePaciente": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataCriacao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dataFormatada": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PregasCutaneas": {
+        "required": [
+          "avaliacaoAntropometricaId"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "avaliacaoAntropometricaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "avaliacaoAntropometrica": {
+            "$ref": "#/components/schemas/AvaliacaoAntropometrica"
+          },
+          "pcb": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "pct": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "pcsa": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "pcse": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "pcsi": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "pcab": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "pcp": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "pccx": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "pctx": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Refeicao": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tipo": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataHora": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "anotacao": {
+            "type": "string",
+            "nullable": true
+          },
+          "anotacaoEditadaEm": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "itensConsumidos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ItemConsumido"
+            },
+            "nullable": true
+          },
+          "historicoAnotacoes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AnotacaoRefeicaoHistorico"
+            },
+            "nullable": true
+          },
+          "pacienteId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "paciente": {
+            "$ref": "#/components/schemas/Paciente"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RefeicaoPlanoDTO": {
+        "type": "object",
+        "properties": {
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "horario": {
+            "type": "string",
+            "format": "date-span",
+            "nullable": true
+          },
+          "itens": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ItemPlanoAlimentarDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RefeicaoPlanoDetalhadoDTO": {
+        "type": "object",
+        "properties": {
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "horario": {
+            "type": "string",
+            "format": "date-span",
+            "nullable": true
+          },
+          "itens": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ItemPlanoDetalhadoDTO"
+            },
+            "nullable": true
+          },
+          "totais": {
+            "$ref": "#/components/schemas/ResumoMacrosDTO"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RegisterNutricionistaDTO": {
+        "required": [
+          "crn",
+          "email",
+          "nomeCompleto",
+          "password"
+        ],
+        "type": "object",
+        "properties": {
+          "nomeCompleto": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "email": {
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "password": {
+            "minLength": 6,
+            "type": "string"
+          },
+          "crn": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ResultadoAvaliacaoDTO": {
+        "type": "object",
+        "properties": {
+          "percentualGordura": {
+            "type": "number",
+            "format": "double"
+          },
+          "massaGorda": {
+            "type": "number",
+            "format": "double"
+          },
+          "massaMagra": {
+            "type": "number",
+            "format": "double"
+          },
+          "tmb": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ResumoMacrosDTO": {
+        "type": "object",
+        "properties": {
+          "calorias": {
+            "type": "number",
+            "format": "double"
+          },
+          "proteinas": {
+            "type": "number",
+            "format": "double"
+          },
+          "carboidratos": {
+            "type": "number",
+            "format": "double"
+          },
+          "gorduras": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Sexo": {
+        "enum": [
+          0,
+          1
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "SubtipoMicronutriente": {
+        "enum": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "SuplementoRequestDTO": {
+        "type": "object",
+        "properties": {
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "marca": {
+            "type": "string",
+            "nullable": true
+          },
+          "posologia": {
+            "type": "string",
+            "nullable": true
+          },
+          "horario": {
+            "type": "string",
+            "nullable": true
+          },
+          "finalidade": {
+            "type": "string",
+            "nullable": true
+          },
+          "pacienteId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "planoAlimentarId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SuplementoResponseDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "marca": {
+            "type": "string",
+            "nullable": true
+          },
+          "posologia": {
+            "type": "string",
+            "nullable": true
+          },
+          "horario": {
+            "type": "string",
+            "nullable": true
+          },
+          "finalidade": {
+            "type": "string",
+            "nullable": true
+          },
+          "pacienteId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "planoAlimentarId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TabelaTaco": {
+        "type": "object",
+        "properties": {
+          "numeroAlimento": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "umidade": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "energiaKcal": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "energiaKj": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "proteina": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "lipideos": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "colesterol": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "carboidrato": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "fibraAlimentar": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "cinzas": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "calcio": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "magnesio": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "manganes": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "fosforo": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ferro": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "sodio": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "potassio": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "cobre": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "zinco": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "retinol": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "re": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "rae": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "tiamina": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "riboflavina": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "piridoxina": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "niacina": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "vitaminaC": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "acidosGraxos": {
+            "$ref": "#/components/schemas/AcidosGraxosTaco"
+          },
+          "aminoacidos": {
+            "$ref": "#/components/schemas/AminoacidosTaco"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TabelaTacoSimplificadoDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "energiaKcal": {
+            "type": "number",
+            "format": "double"
+          },
+          "proteina": {
+            "type": "number",
+            "format": "double"
+          },
+          "lipideos": {
+            "type": "number",
+            "format": "double"
+          },
+          "carboidrato": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoNutriente": {
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "type": "integer",
+        "format": "int32"
+      }
+    }
+  }
+}
