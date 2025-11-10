@@ -273,6 +273,8 @@ namespace PeaceApi.Migrations
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     PacienteId = table.Column<int>(type: "integer", nullable: false),
+                    NutricionistaId = table.Column<int>(type: "integer", nullable: true),
+                    DataRegistro = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     NomeCompleto = table.Column<string>(type: "text", nullable: false),
                     DataNascimento = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     Ocupacao = table.Column<string>(type: "text", nullable: true),
@@ -302,8 +304,7 @@ namespace PeaceApi.Migrations
                     Altura = table.Column<double>(type: "double precision", nullable: false),
                     FatorAtividade = table.Column<int>(type: "integer", nullable: false),
                     ConsumoAguaDiario = table.Column<double>(type: "double precision", nullable: true),
-                    FrequenciaIntestinal = table.Column<string>(type: "text", nullable: false),
-                    NutricionistaId = table.Column<int>(type: "integer", nullable: true)
+                    FrequenciaIntestinal = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -622,7 +623,8 @@ namespace PeaceApi.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Anamneses_PacienteId",
                 table: "Anamneses",
-                column: "PacienteId");
+                column: "PacienteId",
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_AnotacoesRefeicaoHistorico_RefeicaoId",
