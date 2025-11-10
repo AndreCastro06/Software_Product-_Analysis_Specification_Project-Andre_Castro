@@ -135,7 +135,6 @@ namespace PEACE.api.Controllers
                 Id = a.Id,
                 NomeCompleto = a.NomeCompleto,
                 DataNascimento = a.DataNascimento,
-                Idade = a.Idade,
                 Ocupacao = a.Ocupacao,
                 PraticaAtividadeFisica = a.PraticaAtividadeFisica,
                 AtividadeFisicaTipo = a.AtividadeFisicaTipo,

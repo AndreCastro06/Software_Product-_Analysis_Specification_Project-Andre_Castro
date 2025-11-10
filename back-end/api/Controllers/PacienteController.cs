@@ -83,6 +83,36 @@ namespace PEACE.api.Controllers
 
             return Ok(paciente);
         }
+
+
+        [HttpGet("anamnese")]
+        [Authorize(Roles = "Nutricionista")]
+        public async Task<IActionResult> ListarPacientesComAnamnese()
+        {
+            var claimId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (claimId == null)
+                return Unauthorized("Token inválido.");
+
+            int nutriId = int.Parse(claimId);
+
+            var pacientes = await _context.Pacientes
+                .Include(p => p.Anamnese)
+                .Where(p => p.NutricionistaId == nutriId && p.Anamnese != null)
+                .Select(p => new
+                {
+                    p.Id,
+                    p.NomeCompleto,
+                    DataAnamnese = p.Anamnese.DataRegistro,
+                    Sexo = p.Anamnese.Sexo.ToString() // Novo campo retornado para o front
+                })
+                .OrderByDescending(p => p.DataAnamnese)
+                .ToListAsync();
+
+            if (!pacientes.Any())
+                return Ok(new List<object>());
+
+            return Ok(pacientes);
+        }
     }
 }
 

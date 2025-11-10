@@ -18,12 +18,17 @@ namespace PEACE.api.Controllers
             _service = service;
         }
 
+
         [HttpPost]
         [Authorize(Roles = "Nutricionista")]
-        public async Task<ActionResult<AvaliacaoAntropometrica>> Criar([FromBody] AvaliacaoAntropometricaDTO dto)
+        public async Task<ActionResult<ResultadoAvaliacaoDTO>> Criar([FromBody] AvaliacaoAntropometricaDTO dto)
         {
-            var avaliacao = await _service.CriarAsync(dto);
-            return Ok(avaliacao);
+            Console.WriteLine("==== DEBUG DTO RECEBIDO ====");
+            Console.WriteLine(System.Text.Json.JsonSerializer.Serialize(dto, new System.Text.Json.JsonSerializerOptions { WriteIndented = true }));
+            Console.WriteLine("============================");
+
+            var resultado = await _service.CriarAsync(dto);
+            return Ok(resultado);
         }
 
         [HttpGet("paciente/{pacienteId}")]
