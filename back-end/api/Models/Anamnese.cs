@@ -21,6 +21,9 @@ namespace PEACE.api.Models
         public string NomeCompleto { get; set; } = string.Empty;
 
         [Required]
+        public DateTime DataRegistro { get; set; } = DateTime.UtcNow;
+
+        [Required]
         public DateTime DataNascimento { get; set; }
 
         [NotMapped]

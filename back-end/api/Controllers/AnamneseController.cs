@@ -31,7 +31,6 @@ namespace PEACE.api.Controllers
 
                 int nutriId = int.Parse(claimId);
 
-                // Verifica se já existe paciente com mesmo nome para o nutricionista logado
                 bool nomeExiste = await _context.Pacientes
                     .AnyAsync(p => p.NutricionistaId == nutriId &&
                                    p.NomeCompleto.ToLower() == dto.NomeCompleto.ToLower());
@@ -39,11 +38,17 @@ namespace PEACE.api.Controllers
                 if (nomeExiste)
                     return Conflict("Já existe um paciente com esse nome cadastrado.");
 
+                // FIX: Corrigir DataNascimento — obrigatoriamente UTC
+                var dataNascimentoUtc = DateTime.SpecifyKind(dto.DataNascimento, DateTimeKind.Utc);
+
+                //  FIX: Corrigir DataRegistro também
+                var dataRegistroUtc = DateTime.SpecifyKind(DateTime.UtcNow, DateTimeKind.Utc);
+
                 // Cria o paciente automaticamente
                 var paciente = new Paciente
                 {
                     NomeCompleto = dto.NomeCompleto.Trim(),
-                    DataNascimento = dto.DataNascimento,
+                    DataNascimento = dataNascimentoUtc,
                     NutricionistaId = nutriId
                 };
 
@@ -55,7 +60,12 @@ namespace PEACE.api.Controllers
                 {
                     PacienteId = paciente.Id,
                     NomeCompleto = dto.NomeCompleto,
-                    DataNascimento = dto.DataNascimento,
+                    DataNascimento = dataNascimentoUtc,
+                    DataRegistro = dataRegistroUtc,
+                    Peso = dto.Peso,
+                    Altura = dto.Altura,
+                    FatorAtividade = dto.FatorAtividade,
+
                     Ocupacao = dto.Ocupacao,
                     PraticaAtividadeFisica = dto.PraticaAtividadeFisica,
                     AtividadeFisicaTipo = dto.AtividadeFisicaTipo,

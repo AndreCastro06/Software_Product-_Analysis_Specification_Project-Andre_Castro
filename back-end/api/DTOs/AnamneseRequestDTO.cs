@@ -15,6 +15,10 @@ namespace PEACE.api.DTOs
         [Required]
         public DateTime DataNascimento { get; set; }
 
+        [Required]
+        public DateTime DataConsulta { get; set; }
+
+
         public string? Ocupacao { get; set; }
 
         // Dado essencial para uso posterior (como Avaliação Física)

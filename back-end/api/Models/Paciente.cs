@@ -13,4 +13,7 @@ public class Paciente
     public byte[]? PasswordSalt { get; set; }
     public ICollection<Refeicao> Refeicoes { get; set; } = new List<Refeicao>();
 
+    public Anamnese? Anamnese { get; set; }
+
+
 }

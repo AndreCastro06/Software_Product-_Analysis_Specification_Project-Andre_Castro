@@ -1,89 +1,101 @@
 import { useState } from "react";
-import logo from "../assets/logo.png";
 import { login } from "../services/authService";
+import { useNavigate } from "react-router-dom";
+import { Button } from "../components/ui/button";
+import { Input } from "../components/ui/input";
+import logo from "../assets/logo.png";
+import "../index.css";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
-  const [senha, setSenha] = useState("");
+  const [password, setPassword] = useState("");
   const [erro, setErro] = useState("");
+  const navigate = useNavigate();
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  async function handleLogin(e: React.FormEvent) {
     e.preventDefault();
     setErro("");
 
     try {
-      const response = await login({ email, password: senha });
-      const { token, nome, role } = response.data;
+      const response = await login({ email, password });
+      const data = response.data as { token: string; role: string };
 
-      console.log("Login bem-sucedido:", response.data);
+      localStorage.setItem("token", data.token);
+      localStorage.setItem("role", data.role);
 
-      localStorage.setItem("token", token);
-      localStorage.setItem("nome", nome);
-      localStorage.setItem("role", role);
-
-
-      if (role === "Nutricionista") {
-        console.log("Login como Nutricionista");
-        // não redireciona
-      } else if (role === "Paciente") {
-        console.log("Login como Paciente");
-        // não redireciona
+      if (data.role === "Nutricionista") {
+      navigate("/painel-nutricionista");
       } else {
-        console.warn("Tipo de usuário não reconhecido:", role);
+        navigate("/paciente");
       }
-    } catch (error: any) {
-      console.error("Erro no login:", error);
-       setErro("Usuário ou senha inválidos.");
-       }
-
-      }
-    //   // Redirecionamento baseado na role:
-    //   if (role === "Nutricionista") {
-    //     window.location.href = "/LoginPage";
-    //   } else if (role === "Paciente") {
-    //     window.location.href = "/LoginPage";
-    //   } else {
-    //     console.warn("Tipo de usuário não reconhecido:", role);
-    //   }
-    // } catch (error: any) {
-    //   console.error("Erro no login:", error);
-    //   setErro("Usuário ou senha inválidos.");
-    // }
-  //};
-
+    } catch {
+      setErro("Credenciais inválidas");
+    }
+  }
 
   return (
-    <div className="login-container">
-      <div className="logo-container">
-        <img src={logo} alt="Logo PEACE" className="logo" />
-        <h1 className="login-title">Login</h1>
-      </div>
+    <div className="min-h-screen flex items-center justify-center bg-[#fafafa]">
+      
+      <form
+        onSubmit={handleLogin}
+        className="
+          bg-white
+          shadow-lg
+          p-10
+          rounded-2xl
+          w-[380px]
+          space-y-6
+          border border-gray-200
+        "
+      >
+                        <img 
+          src={logo} 
+          alt="Logo PEACE" 
+          className="mx-auto w-48 mb-6" 
+        />
 
-      <form onSubmit={handleSubmit} className="login-form">
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="login-input"
-        />
-        <input
-          type="password"
-          placeholder="Senha"
-          value={senha}
-          onChange={(e) => setSenha(e.target.value)}
-          className="login-input"
-        />
-        <button type="submit" className="login-button">Entrar</button>
-        {erro && <p style={{ color: "red" }}>{erro}</p>}
+        <h2 className="text-3xl font-semibold text-center text-gray-800">
+          Login
+        </h2>
+
+        {erro && (
+          <p className="text-red-500 text-sm text-center">{erro}</p>
+        )}
+
+        <div className="space-y-4">
+          <Input
+            type="email"
+            placeholder="E-mail"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="w-full"
+          />
+
+          <Input
+            type="password"
+            placeholder="Senha"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className="w-full"
+          />
+        </div>
+        <Button
+          type="submit"
+          className="w-full bg-orange-600 hover:bg-orange-700 text-white py-2 rounded-lg font-medium"
+        >
+          Entrar
+        </Button>
+
+        <div className="text-center">
+          <button
+            type="button"
+            onClick={() => navigate("/register")}
+            className="text-blue-600 hover:underline text-sm font-medium"
+          >
+            Criar conta (Nutricionista)
+          </button>
+        </div>
       </form>
-
-      <div style={{ marginTop: "1rem" }}>
-        <span>Novo por aqui? </span>
-        <a href="/register" style={{ color: "#007bff", textDecoration: "none", fontWeight: "bold" }}>
-          crie sua conta
-        </a>
-      </div>
     </div>
   );
 }

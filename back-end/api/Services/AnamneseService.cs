@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PEACE.api.Data;
 using PEACE.api.DTOs;
+using PEACE.api.Enums;
 using PEACE.api.Models;
 
 namespace PEACE.api.Services
@@ -14,15 +15,18 @@ namespace PEACE.api.Services
             _context = context;
         }
 
-        //  Este é o método que você escreveu
         public async Task<AnamneseResponseDTO> CriarAsync(AnamneseRequestDTO dto)
         {
+            // Converter Sexo (string -> enum)
+            var sexoEnum = Enum.Parse<Sexo>(dto.Sexo, true);
+
             var entity = new Anamnese
             {
                 PacienteId = dto.PacienteId ?? 0,
                 NomeCompleto = dto.NomeCompleto,
                 DataNascimento = dto.DataNascimento,
                 Ocupacao = dto.Ocupacao,
+                DataRegistro = dto.DataConsulta,
                 PraticaAtividadeFisica = dto.PraticaAtividadeFisica,
                 AtividadeFisicaTipo = dto.AtividadeFisicaTipo,
                 AtividadeFisicaHorario = dto.AtividadeFisicaHorario,
@@ -44,13 +48,17 @@ namespace PEACE.api.Services
                 IntoleranciaLactose = dto.IntoleranciaLactose,
                 AversoesAlimentares = dto.AversoesAlimentares,
                 ConsumoAguaDiario = dto.ConsumoAguaDiario,
-                FrequenciaIntestinal = dto.FrequenciaIntestinal
+                FrequenciaIntestinal = dto.FrequenciaIntestinal,
+                Sexo = sexoEnum,
+                Peso = dto.Peso,
+                Altura = dto.Altura,
+                FatorAtividade = dto.FatorAtividade
             };
 
             _context.Anamneses.Add(entity);
             await _context.SaveChangesAsync();
 
-            // Monta o retorno completo
+            // Monta o retorno
             return new AnamneseResponseDTO
             {
                 PacienteId = entity.PacienteId,
@@ -79,10 +87,10 @@ namespace PEACE.api.Services
                 AversoesAlimentares = entity.AversoesAlimentares,
                 ConsumoAguaDiario = entity.ConsumoAguaDiario,
                 FrequenciaIntestinal = entity.FrequenciaIntestinal,
-                Sexo = dto.Sexo,
-                Peso = dto.Peso,
-                Altura = dto.Altura,
-                FatorAtividade = dto.FatorAtividade
+                Sexo = entity.Sexo.ToString(),
+                Peso = entity.Peso,
+                Altura = entity.Altura,
+                FatorAtividade = entity.FatorAtividade
             };
         }
     }

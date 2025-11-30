@@ -41,7 +41,7 @@ namespace PEACE.api.Controllers
         [HttpGet("planos-alimentares")]
         public async Task<ActionResult<List<PlanoResumoDTO>>> ListarPlanos()
         {
-            var planos = await _context.PlanoAlimentar
+            var planos = await _context.PlanosAlimentares
                 .Include(p => p.Paciente)
                 .OrderByDescending(p => p.DataCriacao)
                 .Select(p => new PlanoResumoDTO

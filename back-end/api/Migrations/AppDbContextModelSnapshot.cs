@@ -402,7 +402,7 @@ namespace PeaceApi.Migrations
 
                     b.Property<string>("FatorAtividade")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("character varying(64)");
 
                     b.Property<double>("GEB")
                         .HasColumnType("double precision");
@@ -706,7 +706,7 @@ namespace PeaceApi.Migrations
 
                     b.HasIndex("PacienteId");
 
-                    b.ToTable("PlanoAlimentar");
+                    b.ToTable("PlanosAlimentares");
                 });
 
             modelBuilder.Entity("PEACE.api.Models.PregasCutaneas", b =>
@@ -742,9 +742,6 @@ namespace PeaceApi.Migrations
                         .HasColumnType("double precision");
 
                     b.Property<double?>("PCT")
-                        .HasColumnType("double precision");
-
-                    b.Property<double?>("PCTX")
                         .HasColumnType("double precision");
 
                     b.HasKey("Id");

@@ -1,11 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\back-end",
-    "\\back-end\\PeaceApi",
-    "\\back-end\\PeaceApi\\PeaceApi",
-    "\\back-end\\PeaceApi\\PeaceApi\\DTOs"
+    ""
   ],
-  "SelectedNode": "\\back-end\\PeaceApi\\PeaceApi\\DTOs\\RegisterNutricionistaDTO.cs",
   "PreviewInSolutionExplorer": false
 }

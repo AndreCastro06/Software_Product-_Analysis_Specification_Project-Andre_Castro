@@ -20,7 +20,5 @@ namespace PEACE.api.Models
         public double? PCAB { get; set; }  // Abdominal
         public double? PCP { get; set; }  // Panturilha
         public double? PCCX { get; set; }  // COXA
-        public double? PCTX { get; set; }  // COXA
-
     }
 }

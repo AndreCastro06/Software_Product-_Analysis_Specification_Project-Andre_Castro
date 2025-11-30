@@ -13,6 +13,9 @@ namespace PEACE.api.Models
         [Required]
         public int PacienteId { get; set; }
 
+        [Required]
+        public DateTime DataAvaliacao { get; set; }
+
         [ForeignKey("PacienteId")]
         public Paciente? Paciente { get; set; }
 
@@ -32,7 +35,8 @@ namespace PEACE.api.Models
         // Dados energéticos
         public double GEB { get; set; }
         public double GET { get; set; }
-        public FatorAtividade FatorAtividade { get; set; }
+        public double FatorAtividade { get; set; }
+
 
         // Composição corporal
         public MetodoAvaliacao Metodo { get; set; }
@@ -43,6 +47,5 @@ namespace PEACE.api.Models
 
         // Relacionamento com pregas
         public PregasCutaneas? PregasCutaneas { get; set; }
-        public DateTime DataAvaliacao { get; set; } = DateTime.UtcNow;
     }
 }

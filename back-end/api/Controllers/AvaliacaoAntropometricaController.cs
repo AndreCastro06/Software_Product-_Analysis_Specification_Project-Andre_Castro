@@ -1,5 +1,4 @@
-﻿
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PEACE.api.DTOs;
 using PEACE.api.Models;
@@ -18,34 +17,48 @@ namespace PEACE.api.Controllers
             _service = service;
         }
 
-
+        // ===========================
+        //  POST - Criar Avaliação
+        // ===========================
         [HttpPost]
         [Authorize(Roles = "Nutricionista")]
-        public async Task<ActionResult<ResultadoAvaliacaoDTO>> Criar([FromBody] AvaliacaoAntropometricaDTO dto)
+        public async Task<ActionResult<AvaliacaoResultadoDTO>> Criar([FromBody] AvaliacaoAntropometricaDTO dto)
         {
-            Console.WriteLine("==== DEBUG DTO RECEBIDO ====");
-            Console.WriteLine(System.Text.Json.JsonSerializer.Serialize(dto, new System.Text.Json.JsonSerializerOptions { WriteIndented = true }));
-            Console.WriteLine("============================");
+            try
+            {
+                var avaliacao = await _service.CriarAsync(dto);
 
-            var resultado = await _service.CriarAsync(dto);
-            return Ok(resultado);
+                return Ok(new AvaliacaoResultadoDTO
+                {
+                    PercentualGordura = avaliacao.PercentualGordura,
+                    MassaGorda = avaliacao.MassaGorda,
+                    MassaMagra = avaliacao.MassaMagra,
+                    Metodo = avaliacao.Metodo,
+                    Peso = avaliacao.Peso,
+                    Idade = avaliacao.Idade
+                });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { erro = ex.Message });
+            }
         }
-
+        // ===========================
+        //  GET - Listar por Paciente
+        // ===========================
         [HttpGet("paciente/{pacienteId}")]
-        [Authorize(Roles = "Nutricionista")]
-        public async Task<ActionResult<IEnumerable<AvaliacaoAntropometrica>>> ListarPorPaciente(int pacienteId)
+        public async Task<ActionResult<IEnumerable<AvaliacaoHistoricoDTO>>> Listar(int pacienteId)
         {
-            var avaliacoes = await _service.ListarPorPacienteAsync(pacienteId);
-            return Ok(avaliacoes);
-        }
-
-        [HttpPost("simular")]
-        [Authorize(Roles = "Nutricionista")]
-        public ActionResult<ResultadoAvaliacaoDTO> Simular([FromBody] AvaliacaoAntropometricaDTO dto)
-        {
-            var resultado = _service.CalcularResultado(dto);
-            return Ok(resultado);
-
+            try
+            {
+                var avaliacoes = await _service.ListarPorPacienteAsync(pacienteId);
+                return Ok(avaliacoes);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { erro = ex.Message });
+            }
         }
     }
 }
+

@@ -11,7 +11,7 @@ using System.Collections.Generic;
 namespace PEACE.api.Controllers
 {
     [ApiController]
-    [Route("api/pacientes")]
+    [Route("pacientes")]
     [Authorize(Roles = "Nutricionista")]
     public class PacienteController : ControllerBase
     {
@@ -38,10 +38,13 @@ namespace PEACE.api.Controllers
             if (nomeExiste)
                 return Conflict("Ja existe um paciente com esse nome cadastrado por voce.");
 
+            // Corrige o problema de Kind=Unspecified
+            var dataNascUtc = DateTime.SpecifyKind(dto.DataNascimento, DateTimeKind.Utc);
+
             var paciente = new Paciente
             {
                 NomeCompleto = dto.NomeCompleto.Trim(),
-                DataNascimento = dto.DataNascimento,
+                DataNascimento = dataNascUtc,
                 NutricionistaId = nutriId
             };
 
@@ -56,6 +59,59 @@ namespace PEACE.api.Controllers
                 paciente.DataNascimento
             });
         }
+
+        [Authorize(Roles = "Nutricionista")]
+        [HttpGet("meus-pacientes")]
+        public async Task<ActionResult<IEnumerable<Paciente>>> GetMeusPacientes()
+        {
+            var claimId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (claimId == null) return Unauthorized();
+
+            int nutriId = int.Parse(claimId);
+
+            var pacientes = await _context.Pacientes
+                .Where(p => p.NutricionistaId == nutriId)
+                .ToListAsync();
+
+            return pacientes;
+        }
+
+
+        [HttpGet("{id}/dados-avaliacao")]
+        [Authorize(Roles = "Nutricionista")]
+        public async Task<IActionResult> ObterDadosParaAvaliacao(int id)
+        {
+            var claimId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (claimId == null)
+                return Unauthorized();
+
+            int nutriId = int.Parse(claimId);
+
+            var paciente = await _context.Pacientes
+                .Include(p => p.Anamnese)
+                .FirstOrDefaultAsync(p => p.Id == id && p.NutricionistaId == nutriId);
+
+            if (paciente == null)
+                return NotFound("Paciente não encontrado.");
+
+            if (paciente.Anamnese == null)
+                return BadRequest("Paciente ainda não possui anamnese.");
+
+            // Calcular idade
+            int idade = DateTime.UtcNow.Year - paciente.DataNascimento.Year;
+            if (paciente.DataNascimento.Date > DateTime.UtcNow.AddYears(-idade)) idade--;
+
+            return Ok(new
+            {
+                paciente.Id,
+                paciente.NomeCompleto,
+                Idade = idade,
+                paciente.Anamnese.Sexo,
+                paciente.Anamnese.Altura,
+                paciente.Anamnese.Peso
+            });
+        }
+
 
         [HttpGet]
         public async Task<IActionResult> Listar()
